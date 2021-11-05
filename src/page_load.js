@@ -1,4 +1,5 @@
 import rest_img from './resturant_img.jpg';
+import './style.css';
 
 const create = () => {
     const content = document.querySelector('#content');
@@ -24,6 +25,9 @@ function createMenuBar() {
     home.classList.add('home');
     contact.classList.add('contact');
     menu.classList.add('menu');
+    home.classList.add('item');
+    contact.classList.add('item');
+    menu.classList.add('item');
 
     home.textContent = "Home";
     menu.textContent = "Menu";
@@ -36,9 +40,12 @@ function createMenuBar() {
 }
 
 function createPic() {
+    const img_holder = document.createElement('div');
+    img_holder.classList.add('img_holder');
     const myImg = new Image();
     myImg.src = rest_img;
-    return myImg;
+    img_holder.appendChild(myImg);
+    return img_holder;
 }
 
 function createDescription() {
