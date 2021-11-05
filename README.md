@@ -1,0 +1,1 @@
+This is a resturant page that used webpack and bundle to create.
