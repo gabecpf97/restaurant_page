@@ -1,6 +1,6 @@
-/* body {
-    background-color: ;
-} */
+body {
+    background-color: cadetblue;
+}
 
 h1 {
     text-align: center;
@@ -29,6 +29,49 @@ img {
     height: auto;
 }
 
+.headline {
+    text-align: center;
+    margin-top: 20px;
+}
+
 .des {
     text-align: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border: 5px solid rgb(97, 51, 51);
+    font-size: 22px;
+    padding: 20px;
+    width: 800px;
+}
+
+.dish {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu_title {
+    font-size: 32px;
+    margin-bottom: 0px;
+    color: blanchedalmond;
+}
+
+.contact {
+    text-align: center;
+    border: blueviolet 5px solid;
+}
+
+.contact_info {
+    margin: 20px;
 }

@@ -5,10 +5,14 @@ const create = () => {
 
 function createMenu() {
     const menu = document.createElement('div');
+    const title = document.createElement('h2');
     const dishes = document.createElement('ul');
     menu.classList.add('menu');
+    title.classList.add('menu_title');
     dishes.classList.add('dishes');
+    title.textContent = 'Menu';
     addDishes(dishes);
+    menu.appendChild(title);
     menu.appendChild(dishes);
     return menu;
 }
